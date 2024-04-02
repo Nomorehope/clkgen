@@ -15,6 +15,8 @@ reg [3:0] bit_counter = 0;          // Счетчик битов для синх
 
 reg [2:0] state;            // Состояние конечного автомата
 
+reg [23:0] ten_sec_counter = 0; // Счетчик для отслеживания 10 секунд
+
 // Конечный автомат для обработки данных
 always @(posedge clk or posedge rst) begin
     if (rst) begin
@@ -23,7 +25,16 @@ always @(posedge clk or posedge rst) begin
         prev_tx_data <= 8'b0;
         difference_reg <= 8'b0;
         bit_counter <= 0;
+        ten_sec_counter <= 0;
     end else begin
+        // Обновляем счетчик каждый такт
+        if (ten_sec_counter == 100_000_000) begin // 10 секунд при тактовой частоте 100 МГц
+            ten_sec_counter <= 0;
+            tx_data <= 8'b01010101; // "Working!" в ASCII
+        end else begin
+            ten_sec_counter <= ten_sec_counter + 1;
+        end
+
         case(state)
             3'b000: begin  // Ожидание старта
                 if (bit_counter == baud_rate_divider) begin

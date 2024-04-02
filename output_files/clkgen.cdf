@@ -1,10 +1,10 @@
-/* Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version */
+/* Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EPCS4) Path("D:/clk/clkgen/") File("output_file_microseconds.pof") MfrSpec(OpMask(1) Child_OpMask(1 1));
+		Device PartName(EPCS4) Path("F:/clkgen/output_files/") File("output_file.pof") MfrSpec(OpMask(1) Child_OpMask(1 1));
 
 ChainEnd;
 

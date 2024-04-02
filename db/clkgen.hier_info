@@ -3,10 +3,10 @@ clk => clk.IN2
 rx => rx.IN1
 button => exitbutton~reg0.DATAIN
 button => ledbutton~reg0.DATAIN
-exit <= exit~reg0.DB_MAX_OUTPUT_PORT_TYPE
-exitbutton <= exitbutton~reg0.DB_MAX_OUTPUT_PORT_TYPE
-tx <= UART_Difference:UART_Difference.UART_tx
-ledbutton <= ledbutton~reg0.DB_MAX_OUTPUT_PORT_TYPE
+exit << exit~reg0.DB_MAX_OUTPUT_PORT_TYPE
+exitbutton << exitbutton~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx << UART_Difference:UART_Difference.UART_tx
+ledbutton << ledbutton~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |clkgen|UART_Difference:UART_Difference
