@@ -1,4 +1,6 @@
-/db /incremental_db /greybox_tmp
+/db
+/incremental_db 
+/greybox_tmp
 *.cdb
 *.cdb
 db/clkgen.(0).cnf.cdb
