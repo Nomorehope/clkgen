@@ -1,6 +1,8 @@
-module clkgen(input clk,  button, output reg exit, exitbutton, ledbutton); //ledgen
+module clkgen(input clk, rx, button, output reg exit, exitbutton, tx, ledbutton); //ledgen
 wire tempwire;
 reg [13:0]cnt;
+
+UART_Difference UART_Difference(.clk(clk), .UART_rx(rx), .UART_tx(tx));
 
 genpll genpll(.inclk0(clk), .c0(tempwire));
 always @ (posedge clk) begin

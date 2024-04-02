@@ -1,10 +1,73 @@
 |clkgen
-clk => clk.IN1
+clk => clk.IN2
+rx => rx.IN1
 button => exitbutton~reg0.DATAIN
 button => ledbutton~reg0.DATAIN
-exit <= exit~reg0.DB_MAX_OUTPUT_PORT_TYPE
-exitbutton <= exitbutton~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ledbutton <= ledbutton~reg0.DB_MAX_OUTPUT_PORT_TYPE
+exit << exit~reg0.DB_MAX_OUTPUT_PORT_TYPE
+exitbutton << exitbutton~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tx << UART_Difference:UART_Difference.UART_tx
+ledbutton << ledbutton~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|clkgen|UART_Difference:UART_Difference
+clk => UART_tx~reg0.CLK
+clk => bit_counter[0].CLK
+clk => bit_counter[1].CLK
+clk => bit_counter[2].CLK
+clk => bit_counter[3].CLK
+clk => difference[0].CLK
+clk => rx_data[0].CLK
+clk => rx_data[1].CLK
+clk => rx_data[2].CLK
+clk => rx_data[3].CLK
+clk => rx_data[4].CLK
+clk => rx_data[5].CLK
+clk => rx_data[6].CLK
+clk => rx_data[7].CLK
+clk => tx_data[0].CLK
+clk => tx_data[1].CLK
+clk => tx_data[2].CLK
+clk => tx_data[3].CLK
+clk => tx_data[4].CLK
+clk => tx_data[5].CLK
+clk => tx_data[6].CLK
+clk => tx_data[7].CLK
+clk => state~6.DATAIN
+rst => bit_counter[0].ACLR
+rst => bit_counter[1].ACLR
+rst => bit_counter[2].ACLR
+rst => bit_counter[3].ACLR
+rst => difference[0].ACLR
+rst => rx_data[0].ACLR
+rst => rx_data[1].ACLR
+rst => rx_data[2].ACLR
+rst => rx_data[3].ACLR
+rst => rx_data[4].ACLR
+rst => rx_data[5].ACLR
+rst => rx_data[6].ACLR
+rst => rx_data[7].ACLR
+rst => tx_data[0].ACLR
+rst => tx_data[1].ACLR
+rst => tx_data[2].ACLR
+rst => tx_data[3].ACLR
+rst => tx_data[4].ACLR
+rst => tx_data[5].ACLR
+rst => tx_data[6].ACLR
+rst => tx_data[7].ACLR
+rst => state~8.DATAIN
+rst => UART_tx~reg0.ENA
+UART_rx => state.OUTPUTSELECT
+UART_rx => state.OUTPUTSELECT
+UART_rx => state.OUTPUTSELECT
+UART_rx => state.OUTPUTSELECT
+UART_rx => state.OUTPUTSELECT
+UART_rx => state.OUTPUTSELECT
+UART_rx => state.OUTPUTSELECT
+UART_rx => state.OUTPUTSELECT
+UART_rx => state.OUTPUTSELECT
+UART_rx => state.OUTPUTSELECT
+UART_rx => rx_data[7].DATAIN
+UART_tx <= UART_tx~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |clkgen|genpll:genpll
