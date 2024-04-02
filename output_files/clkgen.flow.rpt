@@ -1,5 +1,5 @@
 Flow report for clkgen
-Tue Apr 02 11:31:25 2024
+Tue Apr 02 12:45:52 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 02 11:31:25 2024      ;
+; Flow Status                        ; Successful - Tue Apr 02 12:45:52 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; clkgen                                     ;
 ; Top-level Entity Name              ; clkgen                                     ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/02/2024 11:31:12 ;
+; Start date & time ; 04/02/2024 12:45:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; clkgen              ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 200913847804430.171204667209900 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 253058448661019.171205113914428 ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
@@ -99,11 +99,11 @@ applicable agreement for further details.
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4665 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:03     ; 1.0                     ; 4940 MB             ; 00:00:03                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 4942 MB             ; 00:00:03                           ;
 ; Assembler                 ; 00:00:00     ; 1.0                     ; 4565 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4628 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4520 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:05     ; --                      ; --                  ; 00:00:06                           ;
+; Total                     ; 00:00:06     ; --                      ; --                  ; 00:00:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "04/02/2024 11:31:25"
+// DATE "04/02/2024 12:45:52"
 
 // 
 // Device: Altera EP4CE6E22C8 Package TQFP144
@@ -45,11 +45,11 @@ output 	tx;
 output 	ledbutton;
 
 // Design Ports Information
+// rx	=>  Location: PIN_114,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // exit	=>  Location: PIN_34,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // exitbutton	=>  Location: PIN_30,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // tx	=>  Location: PIN_115,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // ledbutton	=>  Location: PIN_84,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// rx	=>  Location: PIN_114,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // button	=>  Location: PIN_88,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // clk	=>  Location: PIN_23,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
