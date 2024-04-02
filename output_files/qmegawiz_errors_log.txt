@@ -1,0 +1,13 @@
+
+
+D:/clk/clkgen/genpll.v
+
+Jan 12 11AM:52:52>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+genpll.vhd
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?
