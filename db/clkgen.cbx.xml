@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="clkgen">
-		<CBX_INST_ENTRY INSTANCE_NAME="|clkgen|genpll:genpll|altpll:altpll_component" CBX_FILE_NAME="genpll_altpll.v"/>
-	</PROJECT>
-</LOG_ROOT>
